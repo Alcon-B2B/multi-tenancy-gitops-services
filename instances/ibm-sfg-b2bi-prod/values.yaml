@@ -150,7 +150,7 @@ ingress:
   port:
 
 dataSetup:
-  enabled: true
+  enabled: false
   upgrade: false
   image:
     repository: "cp.icr.io/cp/ibm-b2bi/b2bi-dbsetup"
@@ -286,7 +286,7 @@ setupCfg:
   dbPort: 50000
   dbData: B2BIDB
   dbDrivers: db2jcc4.jar
-  dbCreateSchema: true
+  dbCreateSchema: false
   oracleUseServiceName: false
   # Values can be either true or false 
   usessl: false
@@ -470,7 +470,7 @@ asi:
     annotations: {}  
   
   backendService:
-    type: NodePort
+    type: LoadBalancer
     # Supported values are "ClientIP" & "None". Default is "None".
     sessionAffinity: None
     #override session affinity timeout configuration (applicable when sessionAffinity is configured other than "None")
