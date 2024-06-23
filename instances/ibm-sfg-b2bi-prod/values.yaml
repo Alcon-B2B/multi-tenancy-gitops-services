@@ -470,6 +470,7 @@ asi:
     annotations: {}  
   
   backendService:
+    #type: NodePort
     type: LoadBalancer
     # Supported values are "ClientIP" & "None". Default is "None".
     sessionAffinity: None
