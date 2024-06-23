@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 NS="b2bi-prod"
-RWX_STORAGECLASS=${RWX_STORAGECLASS:-managed-nfs-storage}
+RWX_STORAGECLASS=${RWX_STORAGECLASS:-ocs-storagecluster-cephfs}
 
 echo "Building Logs PVC"
 ( echo "cat <<EOF" ; cat ibm-sfg-b2bi-sfg-logs-pvc.yaml_template ;) | \
