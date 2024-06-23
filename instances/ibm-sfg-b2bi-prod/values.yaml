@@ -539,7 +539,7 @@ asi:
     
   ingress:
     internal:
-      host: "asi-b2bi-prod.apps.66761bdc359145001ee5bd6a.cloud.techzone.ibm.com"
+      host: "asi-b2bi-prod.apps.6677140aa90211001e3f7664.cloud.techzone.ibm.com"
       tls:
         enabled: false
         secretName: ""
@@ -549,7 +549,7 @@ asi:
       #    servicePort: "my-http"
       #    enableHttps: false
     external:
-      host: "ex-asi-b2bi-prod.apps.66761bdc359145001ee5bd6a.cloud.techzone.ibm.com"
+      host: "ex-asi-b2bi-prod.apps.6677140aa90211001e3f7664.cloud.techzone.ibm.com"
       tls:
         enabled: false
         secretName: ""
@@ -821,7 +821,7 @@ ac:
       
   ingress:
     internal:
-      host: "ac-b2bi-prod.apps.66761bdc359145001ee5bd6a.cloud.techzone.ibm.com"
+      host: "ac-b2bi-prod.apps.6677140aa90211001e3f7664.cloud.techzone.ibm.com"
       tls:
         enabled: false
         secretName: ""
@@ -831,7 +831,7 @@ ac:
       #    servicePort: "my-http"
       #    enableHttps: false
     external:
-      host: "ex-ac-b2bi-prod.apps.66761bdc359145001ee5bd6a.cloud.techzone.ibm.com"
+      host: "ex-ac-b2bi-prod.apps.6677140aa90211001e3f7664.cloud.techzone.ibm.com"
       tls:
         enabled: false
         secretName: ""
@@ -1072,7 +1072,7 @@ api:
 
   ingress:
     internal:
-      host: "api-b2bi-prod.apps.66761bdc359145001ee5bd6a.cloud.techzone.ibm.com"
+      host: "api-b2bi-prod.apps.6677140aa90211001e3f7664.cloud.techzone.ibm.com"
       tls:
         enabled: false
         secretName: ""
