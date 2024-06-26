@@ -150,7 +150,7 @@ ingress:
   port:
 
 dataSetup:
-  enabled: false
+  enabled: true
   upgrade: false
   image:
     repository: "cp.icr.io/cp/ibm-b2bi/b2bi-dbsetup"
@@ -282,11 +282,11 @@ setupCfg:
 
   # Provide the DB attributes
   dbVendor: db2
-  dbHost: 172.30.143.203
+  dbHost: 172.30.19.28
   dbPort: 50000
   dbData: B2BIDB
   dbDrivers: db2jcc4.jar
-  dbCreateSchema: false
+  dbCreateSchema: true
   oracleUseServiceName: false
   # Values can be either true or false 
   usessl: false
@@ -539,7 +539,7 @@ asi:
     
   ingress:
     internal:
-      host: "asi-b2bi-prod.apps.6677140aa90211001e3f7664.cloud.techzone.ibm.com"
+      host: "asi-b2bi-prod.apps.667c59b0808b98001eb0355c.cloud.techzone.ibm.com"
       tls:
         enabled: false
         secretName: ""
@@ -549,7 +549,7 @@ asi:
       #    servicePort: "my-http"
       #    enableHttps: false
     external:
-      host: "ex-asi-b2bi-prod.apps.6677140aa90211001e3f7664.cloud.techzone.ibm.com"
+      host: "ex-asi-b2bi-prod.apps.667c59b0808b98001eb0355c.cloud.techzone.ibm.com"
       tls:
         enabled: false
         secretName: ""
@@ -807,7 +807,7 @@ ac:
     periodSeconds: 600
     
   readinessProbe:
-    initialDelaySeconds: 300
+    initialDelaySeconds: 180
     timeoutSeconds: 500
     periodSeconds: 600
     command:
@@ -821,7 +821,7 @@ ac:
       
   ingress:
     internal:
-      host: "ac-b2bi-prod.apps.6677140aa90211001e3f7664.cloud.techzone.ibm.com"
+      host: "ac-b2bi-prod.apps.667c59b0808b98001eb0355c.cloud.techzone.ibm.com"
       tls:
         enabled: false
         secretName: ""
@@ -831,7 +831,7 @@ ac:
       #    servicePort: "my-http"
       #    enableHttps: false
     external:
-      host: "ex-ac-b2bi-prod.apps.6677140aa90211001e3f7664.cloud.techzone.ibm.com"
+      host: "ex-ac-b2bi-prod.apps.667c59b0808b98001eb0355c.cloud.techzone.ibm.com"
       tls:
         enabled: false
         secretName: ""
@@ -1072,7 +1072,7 @@ api:
 
   ingress:
     internal:
-      host: "api-b2bi-prod.apps.6677140aa90211001e3f7664.cloud.techzone.ibm.com"
+      host: "api-b2bi-prod.apps.667c59b0808b98001eb0355c.cloud.techzone.ibm.com"
       tls:
         enabled: false
         secretName: ""
