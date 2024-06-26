@@ -5,7 +5,7 @@ metadata:
   namespace: b2bi-prod
 spec:
   host: >-
-    asi-b2bi-prod.itzroks-664003h6xc-uqjsu5-4b4a324f027aea19c5cbc0c3275c4656-0000.us-south.containers.appdomain.cloud
+    asi-b2bi-prod.apps.667c59b0808b98001eb0355c.cloud.techzone.ibm.com
   path: /portal_soap
   to:
     kind: Service
