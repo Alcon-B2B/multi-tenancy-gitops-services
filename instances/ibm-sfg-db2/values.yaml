@@ -2,7 +2,7 @@ global: {}
 service-account:
   name: db2
   create: false
-  sccs: ["privileged"]
+  # sccs: ["privileged"]
 
 ibm-sfg-db2:
   name: db2
@@ -18,3 +18,13 @@ ibm-sfg-db2:
     name: db2-lb
     type: LoadBalancer
     port: 50000
+
+  securityContext:
+    privileged: false
+    allowPrivilegeEscalation: false
+    runAsNonRoot: true
+    capabilities:
+      drop:
+      - ALL
+    seccompProfile:
+      type: "RuntimeDefault"
