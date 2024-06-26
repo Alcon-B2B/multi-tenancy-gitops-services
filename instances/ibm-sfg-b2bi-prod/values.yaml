@@ -807,7 +807,7 @@ ac:
     periodSeconds: 600
     
   readinessProbe:
-    initialDelaySeconds: 60
+    initialDelaySeconds: 300
     timeoutSeconds: 500
     periodSeconds: 600
     command:
