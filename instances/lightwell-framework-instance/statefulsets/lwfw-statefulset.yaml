@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: lwfw
-          image: image-registry.openshift-image-registry.svc:5000/b2bi-prod/lw-portal@sha256:88bf89ce3b5edb9691329fc59c716ed6ac8e904e0756c97f960ef81e12d48394
+          image: quay.io/shadyattia/lw-portal:v2.13
           # command: [ "/bin/bash", "-c", "--" ]
           # args: [ "while true; do sleep 30; done;" ]
           ports:
