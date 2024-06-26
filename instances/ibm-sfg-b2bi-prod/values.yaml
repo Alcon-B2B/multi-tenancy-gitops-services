@@ -514,7 +514,7 @@ asi:
   # arg1, arg2.. - command arguments
   readinessProbe:
     initialDelaySeconds: 30
-    timeoutSeconds: 50
+    timeoutSeconds: 500
     periodSeconds: 600
     command:
     arg: []
